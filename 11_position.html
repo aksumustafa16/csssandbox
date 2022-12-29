@@ -7,6 +7,10 @@
   <title>CSS Positioning</title>
   <style>
 
+    body{
+      height: 4000px;
+    }
+
     .box {
       width: 100px;
       height: 100px;
@@ -17,6 +21,7 @@
       top: 50px;
       left: 50px;
       background: red;
+      z-index: 1;
     }
 
     #box-2 {
@@ -34,11 +39,15 @@
     }
 
     #box-4 {
+      position: fixed;
       background: blue;
     }
 
     #box-5 {
+      position: sticky;
+      top: 0;
       background: orange;
+      z-index: -1;
     }
 
     .container {

@@ -17,7 +17,7 @@
     .flex-container{
       display: flex;
       /* flex-direction: row; */
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
     }
     .item {
       background: #f4f4f4;
@@ -26,19 +26,35 @@
       padding: 10px;
       text-align: center;
       border-radius: 10px;
-      width: 200px;
+      flex: 1;
     }
+
+    .item-3{
+      flex: 2;
+    }
+
+    /* .item-1{
+      flex-shrink: 0;
+    }
+    .item-2{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .item-3{
+      flex-grow: 2;
+      flex-basis: 0;
+    } */
   </style>
 </head>
 <body>
   <div class="flex-container">
-    <div class="item imem-1">
+    <div class="item item-1">
       <h3>Item 1</h3>
     </div>
-    <div class="item imem-2">
+    <div class="item item-2">
       <h3>Item 2</h3>
     </div>
-    <div class="item imem-3">
+    <div class="item item-3">
       <h3>Item 3</h3>
     </div>
   </div>
